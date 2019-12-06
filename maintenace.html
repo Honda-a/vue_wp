@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>メンテナンス</title>
+  <style>
+    body{
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .container, footer{
+      text-align: center;
+    }
+    .container{
+      margin-top: 8%;
+    }
+    .container p{
+      margin: auto;
+      padding: 0.1em
+    }
+    h1{
+      margin-bottom: 2em
+    }
+    footer{
+      position: absolute;
+      bottom: 0;
+      margin:0 auto 20px auto;
+      font-size: 0.7em
+    }
+    @media only screen and (max-width: 600px){
+      body{
+        padding: 0;
+        margin: auto;
+      }
+      h2{
+        font-size: 18px;
+      }
+    .container{
+      margin-top: 180px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><img
+        src="data:image/png;base64,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"
+        alt="ipet"></h1>
+    <div class="title" style="margin-top: 20px;">
+      <h2>ただいまメンテナンス作業を行っております</h2>
+    </div>
+    <div class="descrip">
+      <p>終了予定は2019年5月29日10:00です。</p>
+      <p>ご迷惑をおかけして申し訳ございませんが、どうぞよろしくお願いいたします。</p>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © ipet Insurance CO., Ltd. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

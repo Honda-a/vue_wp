@@ -1,0 +1,565 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: peters_collaboration_emails.php\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-27 13:25-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Michal Kuk <michal.kuk@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: peters_collaboration_emails.php:188
+#, php-format
+msgid "There is a new post to review, written by %s."
+msgstr "Byl přidán nový příspěvek ke kontrole, od uživatele %s."
+
+#: peters_collaboration_emails.php:191
+#, php-format
+msgid "Accompanying note from %s:"
+msgstr "Doprovodná poznámka od %s:"
+
+#: peters_collaboration_emails.php:194
+msgid "Review and publish it here: "
+msgstr "Zkotrolujte a publikujte jej zde:"
+
+#: peters_collaboration_emails.php:197
+msgid "pending"
+msgstr "čekající na schválení"
+
+#: peters_collaboration_emails.php:217 peters_collaboration_emails.php:257
+#: peters_collaboration_emails.php:293 peters_collaboration_emails.php:335
+#: peters_collaboration_emails.php:354 peters_collaboration_emails.php:375
+#, php-format
+msgid "Hi %s!"
+msgstr "Zdravím %s!"
+
+#: peters_collaboration_emails.php:220
+#, php-format
+msgid "Your post has been approved by %s and is now published"
+msgstr "Tvůj příspěvek byl zkotrolován uživatelem %s a byl publikován"
+
+#: peters_collaboration_emails.php:224
+msgid "Your post has been approved"
+msgstr "Tvůj příspěvek byl schválen"
+
+#: peters_collaboration_emails.php:231 peters_collaboration_emails.php:270
+#: peters_collaboration_emails.php:306
+msgid "Accompanying note:"
+msgstr "Doprovodná poznámka:"
+
+#: peters_collaboration_emails.php:234 peters_collaboration_emails.php:337
+msgid "See it here:"
+msgstr "Prohlédni si jej zde:"
+
+#: peters_collaboration_emails.php:237
+msgid "published"
+msgstr "publikováno"
+
+#: peters_collaboration_emails.php:260
+#, fuzzy, php-format
+msgid ""
+"Your post has been approved by %s and is scheduled to be published on %s at "
+"%s (UTC %s)."
+msgstr ""
+"Tvůj příspěvek byl schválen uživatelem %s a nyná čeká ve frontě do dne %s "
+"UTC %s"
+
+#: peters_collaboration_emails.php:264
+#, fuzzy, php-format
+msgid ""
+"Your post has been approved and is scheduled to be published on %s at %s "
+"(UTC %s)."
+msgstr ""
+"Tvůj příspěvek byl schválen uživatelem %s a nyná čeká ve frontě do dne %s "
+"UTC %s"
+
+#: peters_collaboration_emails.php:275
+msgid "approved and scheduled"
+msgstr "schváleno a zařazeno do fronty"
+
+#: peters_collaboration_emails.php:296
+#, php-format
+msgid "Your post has been reverted back to draft status by %s."
+msgstr "Tvůj příspěvek byl vrácen zpět do formy konceptu uživatelem %s."
+
+#: peters_collaboration_emails.php:300
+msgid "Your post has been reverted back to draft status."
+msgstr "Tvůj příspěvek byl vrácen zpět do formy konceptu."
+
+#: peters_collaboration_emails.php:310 peters_collaboration_emails.php:358
+msgid "Edit it again here: "
+msgstr "Uprav jej opět zde:"
+
+#: peters_collaboration_emails.php:313
+msgid "back to draft"
+msgstr "zpět do konceptu"
+
+#: peters_collaboration_emails.php:336
+msgid "Your post is now live."
+msgstr "Tvůj příspěvek byl nyní publikován."
+
+#: peters_collaboration_emails.php:340
+msgid "is now live"
+msgstr "byl nyní publikován"
+
+#: peters_collaboration_emails.php:355
+#, php-format
+msgid "An editorial note has been added to your post by %s:"
+msgstr "Ke tvému příspěvku byla přidána další poznámka uživatelem %s:"
+
+#: peters_collaboration_emails.php:361
+msgid "has been modified with an editorial note"
+msgstr "byl upraven s editorskou poznámkou"
+
+#: peters_collaboration_emails.php:376
+#, php-format
+msgid "Thanks for your submission. Your post \"%s\" will be reviewed soon."
+msgstr ""
+
+#: peters_collaboration_emails.php:378
+msgid "has been submitted"
+msgstr ""
+
+#: peters_collaboration_emails.php:470
+msgid "Admin address"
+msgstr "Administrátorův e-mail"
+
+#: peters_collaboration_emails.php:472
+msgid "Other"
+msgstr "Ostatní"
+
+#: peters_collaboration_emails.php:489 peters_collaboration_emails.php:505
+msgid "**** ERROR: Invalid moderator user ID ****"
+msgstr "**** CHYBA: Neplatné číslo moderátorského účtu ****"
+
+#: peters_collaboration_emails.php:515
+msgid "**** ERROR: Invalid moderator e-mail address submitted ****"
+msgstr "**** CHYBA: Uvedena neplatná moderátorský e-mailová adresa ****"
+
+#: peters_collaboration_emails.php:525
+msgid "**** ERROR: Invalid e-mail address submitted ****"
+msgstr "**** CHYBA: Uvedena neplatná e-mailová adresa ****"
+
+#: peters_collaboration_emails.php:558
+msgid "Default moderators updated."
+msgstr "Výchozí moderátoři aktualizování."
+
+#: peters_collaboration_emails.php:562
+msgid "You must have at least one default mod."
+msgstr "Musíte mít alespoň jedenoho výchozího moderátora."
+
+#: peters_collaboration_emails.php:592
+#, php-format
+msgid "**** ERROR: Group with ID of %d does not exist ****"
+msgstr "**** CHYBA: Skupina s ID %d neexistuje ****"
+
+#: peters_collaboration_emails.php:615
+#, php-format
+msgid "You must have at least one default mod for the group \"%s\"."
+msgstr "Musíte mít alespoň jednoho výchozího moderátora pro skupinu \"%s\"."
+
+#: peters_collaboration_emails.php:623
+msgid "Group moderators updated."
+msgstr "Moderátoři skupiny upraveni."
+
+#: peters_collaboration_emails.php:646
+msgid "**** ERROR: Invalid new group contributor user ID ****"
+msgstr "**** CHYBA: Neptalné ID nové skupiny přispěvatelů ****"
+
+#: peters_collaboration_emails.php:655
+msgid "**** ERROR: Invalid new group moderator user ID ****"
+msgstr "**** CHYBA: Neplatné ID nového moderátora skupiny ****"
+
+#: peters_collaboration_emails.php:665
+msgid "**** ERROR: Invalid new group moderator submitted ****"
+msgstr "**** CHYBA: Byl uveden neplatný nový moderátor skupiny ****"
+
+#: peters_collaboration_emails.php:673
+msgid "New group created."
+msgstr "Nová skupina vytvořena."
+
+#: peters_collaboration_emails.php:676
+msgid ""
+"**** ERROR: Unknown query error when adding a collaborator to the new group "
+"****"
+msgstr ""
+"**** CHYBA: Neznámá chyba dotazu při upravování spolupracovníka nové skupiny "
+"****"
+
+#: peters_collaboration_emails.php:680
+msgid "**** ERROR: Unknown query error when creating new group ****"
+msgstr "**** CHYBA: Neznáma chyba dotazu při vytváření nové skupiny ****"
+
+#: peters_collaboration_emails.php:685
+msgid ""
+"**** ERROR: Not all necessary group information was submitted to add a group "
+"****"
+msgstr ""
+"**** CHYBA: Nebyly vyplněny všechny vyžadované údaje pro vytvoření nové "
+"skupiny ****"
+
+#: peters_collaboration_emails.php:701 peters_collaboration_emails.php:849
+msgid "That group does not exist."
+msgstr "Skupina neexistuje."
+
+#: peters_collaboration_emails.php:715
+msgid "**** ERROR: Insufficient group name or contributor information ****"
+msgstr "**** CHYBA: Nevyhovující název skupiny nebo přispěvatel ****"
+
+#: peters_collaboration_emails.php:716
+msgid "**** Make sure that there is at least one contributor. ****"
+msgstr "**** Ujistěte se, že je uveden alespoň jeden přispěvatel. ****"
+
+#: peters_collaboration_emails.php:745
+msgid "**** ERROR: Invalid contributor user ID ****"
+msgstr "**** CHYBA: Neplatné ID přispěvatele ****"
+
+#: peters_collaboration_emails.php:768
+msgid "Collaborators updated."
+msgstr "Spolupracovníci upraveni."
+
+#: peters_collaboration_emails.php:773
+msgid "Group name updated."
+msgstr "Název skupiny upraven."
+
+#: peters_collaboration_emails.php:792
+msgid "**** ERROR: That group does not exist ****"
+msgstr "**** CHYBA: Tato skupina neexistuje ****"
+
+#: peters_collaboration_emails.php:806
+#, php-format
+msgid "Group %s successfully deleted."
+msgstr "Skupina %s byla úspěšně smazána"
+
+#: peters_collaboration_emails.php:809
+msgid "**** ERROR: Database problem in removing the group. ****"
+msgstr "**** CHYBA: Problém s databází při mazání skupiny. ****"
+
+#: peters_collaboration_emails.php:878
+msgid "Manage group:"
+msgstr "Upravit skupinu:"
+
+#: peters_collaboration_emails.php:880
+msgid "Back to the main collaboration config menu"
+msgstr "Zpět do hlavního menu nastavení spolupracovníků"
+
+#: peters_collaboration_emails.php:882 peters_collaboration_emails.php:1079
+msgid "Group name:"
+msgstr "Jméno skupiny:"
+
+#: peters_collaboration_emails.php:883
+msgid "Contributors in this group:"
+msgstr "Přispěvatelé ve skupině:"
+
+#: peters_collaboration_emails.php:887 peters_collaboration_emails.php:1215
+#: peters_collaboration_emails.php:1229 peters_collaboration_emails.php:1235
+#: peters_collaboration_emails.php:1251 peters_collaboration_emails.php:1279
+#: peters_collaboration_emails.php:1547
+msgid "Update"
+msgstr "Upravit"
+
+#: peters_collaboration_emails.php:891
+msgid "Delete this group"
+msgstr "Smazat skupinu"
+
+#: peters_collaboration_emails.php:971 peters_collaboration_emails.php:1052
+#, php-format
+msgid "General admin (%s)"
+msgstr "Obecný admin (%s)"
+
+#: peters_collaboration_emails.php:983 peters_collaboration_emails.php:1064
+#: peters_collaboration_emails.php:1188
+msgid "Add:"
+msgstr "Přidat:"
+
+#: peters_collaboration_emails.php:1007
+msgid "Edit"
+msgstr "Upravit"
+
+#: peters_collaboration_emails.php:1080
+msgid "Add contributor:"
+msgstr "Přidat přispěvatele"
+
+#: peters_collaboration_emails.php:1087 peters_collaboration_emails.php:1274
+msgid "Add moderator:"
+msgstr "Přidat moderátora:"
+
+#: peters_collaboration_emails.php:1113
+msgid "Delete"
+msgstr "Smazat"
+
+#: peters_collaboration_emails.php:1119 peters_collaboration_emails.php:1358
+msgid "All"
+msgstr "Vše"
+
+#: peters_collaboration_emails.php:1126
+msgid "*** undefined ***"
+msgstr "*** neurčeno ***"
+
+#: peters_collaboration_emails.php:1139
+msgid "*** n/a ***"
+msgstr "*** nedostupné ***"
+
+#: peters_collaboration_emails.php:1175
+msgid "General admin"
+msgstr "Obecný admin"
+
+#: peters_collaboration_emails.php:1199
+msgid "Manage collaboration e-mails"
+msgstr "Upravit spolupracovnické e-maily"
+
+#: peters_collaboration_emails.php:1200
+msgid ""
+"Set the moderators who should be e-mailed whenever Contributor users submit "
+"pending posts."
+msgstr ""
+"Nastavit moderátora, který má být upozorněn vždy, když přispěvatel přidá "
+"příspěvek čekající na schválení."
+
+#: peters_collaboration_emails.php:1210
+msgid "Default moderators"
+msgstr "Výchozí moderátoři"
+
+#: peters_collaboration_emails.php:1212
+msgid ""
+"These users will be e-mailed if none of the rules below match. Note that "
+"they must be either editors or administrators."
+msgstr ""
+"Tito uživatelé budou upozorněni, pokud se nesplní žádná z výše uvedených "
+"podmínek. Musí se jednat buď o editory nebo administrátory."
+
+#: peters_collaboration_emails.php:1218
+msgid "Moderators by group"
+msgstr "Moderátoři podle skupiny"
+
+#: peters_collaboration_emails.php:1220 peters_collaboration_emails.php:1240
+msgid "Existing rules"
+msgstr "Existující pravidla"
+
+#: peters_collaboration_emails.php:1223
+msgid "Group"
+msgstr "Skupina"
+
+#: peters_collaboration_emails.php:1224 peters_collaboration_emails.php:1246
+msgid "Moderators"
+msgstr "Moderátoři"
+
+#: peters_collaboration_emails.php:1232
+msgid "Add a group"
+msgstr "Přidat skupinu"
+
+#: peters_collaboration_emails.php:1238
+msgid "Moderators by post type and taxonomy"
+msgstr "Moderátoři podle typu příspěvku a taxanomie"
+
+#: peters_collaboration_emails.php:1243
+msgid "Post Type"
+msgstr "Druh příspěvku"
+
+#: peters_collaboration_emails.php:1244
+msgid "Taxonomy"
+msgstr "Taxanomie"
+
+#: peters_collaboration_emails.php:1245
+msgid "Term"
+msgstr "Termín"
+
+#: peters_collaboration_emails.php:1254
+msgid "Add post-type-specific moderators"
+msgstr "Přidat moderátory pro určitý druh příspěvku"
+
+#: peters_collaboration_emails.php:1257
+msgid "Post type:"
+msgstr "Druh příspěvku:"
+
+#: peters_collaboration_emails.php:1268
+msgid "Taxonomy:"
+msgstr "Taxanomie:"
+
+#: peters_collaboration_emails.php:1271
+msgid "Term:"
+msgstr "Rubrika:"
+
+#: peters_collaboration_emails.php:1390
+msgid "Manual"
+msgstr "Ručně"
+
+#: peters_collaboration_emails.php:1426
+msgid "Customize plugin settings"
+msgstr "Úprava nastavení pluginu"
+
+#: peters_collaboration_emails.php:1431
+msgid ""
+"The name of your blog, to appear in the title of e-mails. Leave blank to "
+"default to the site name within WordPress."
+msgstr ""
+"Název vašeho blogu, který se má zobrazit v nadpisu e-mailů. Nechte prázdné, "
+"pro zobrazení výchozího názvu webu z nastavení WordPress."
+
+#: peters_collaboration_emails.php:1439
+msgid ""
+"E-mail address for the person sending all e-mails. If left blank, the sender "
+"is the user performing the action."
+msgstr ""
+"E-mail, ze kterého mají být odesílány všechny e-maily. Nechte prázdné, aby "
+"se zobrazil e-mail daného uživatele."
+
+#: peters_collaboration_emails.php:1447
+msgid ""
+"Name for the person sending all e-mails. If left blank, the name is of the "
+"user performing the action."
+msgstr ""
+"Jméno osoby, pod kterým se budou odesálat všechny e-maily. Nechte prázdné, "
+"aby se zobrazilo jméno daného uživatele."
+
+#: peters_collaboration_emails.php:1455
+msgid "Let the contributor know who approved his / her post"
+msgstr "Uvědomit přispěvatele o tom, kdo schválil jeho/její příspěvek."
+
+#: peters_collaboration_emails.php:1459 peters_collaboration_emails.php:2096
+msgid "Yes"
+msgstr "Ano"
+
+#: peters_collaboration_emails.php:1460
+msgid "No"
+msgstr "Ne"
+
+#: peters_collaboration_emails.php:1466
+msgid "Which roles on your site can only \"submit for review\""
+msgstr "Které úrovně uživatelů mohou příspěvek \"Odeslat ke schválení\""
+
+#: peters_collaboration_emails.php:1486
+msgid "Which roles on your site can approve posts"
+msgstr "Které role uživatelů mohou schvalovat příspěvky"
+
+#: peters_collaboration_emails.php:1506
+msgid "Which e-mails to send"
+msgstr "Které e-maily odesílat"
+
+#: peters_collaboration_emails.php:1526
+msgid "Permission level required to edit collaboration e-mail settings"
+msgstr ""
+"Úroveň opránění potřebná pro úpravu nastavení spolupracovatelských e-mailů"
+
+#: peters_collaboration_emails.php:1559
+msgid "Collaboration e-mails"
+msgstr "Spolupracovatelské e-maily"
+
+#: peters_collaboration_emails.php:1731
+msgid "Set to pending for the first time"
+msgstr "Odesláno poprvé ke schválení"
+
+#: peters_collaboration_emails.php:1732
+msgid "Thank the author for their submission when a post is set to pending"
+msgstr ""
+
+#: peters_collaboration_emails.php:1733
+msgid "Goes from pending to immediately published"
+msgstr "Změněno z \"čekající na schválení\" na publikované"
+
+#: peters_collaboration_emails.php:1734
+msgid "Goes from pending to approved at a set time in the future"
+msgstr "Změněno z \"čekající na schválení\" na čekající k publikaci."
+
+#: peters_collaboration_emails.php:1735
+msgid "Goes back to draft status"
+msgstr "Změněno zpět na koncept"
+
+#: peters_collaboration_emails.php:1736
+msgid "Goes from scheduled to be published to actually published"
+msgstr "Změněno z čekajícího k publikaci na publikované"
+
+#: peters_collaboration_emails.php:1737
+msgid "Goes from private to published"
+msgstr "Změněno ze soukromé na publikované"
+
+#: peters_collaboration_emails.php:1738
+msgid ""
+"Edited and commented on (using the Peter's Post Notes plugin) by someone who "
+"is not the author, without having changed the status"
+msgstr ""
+"Upraveno a komentováno (pomocí pluginu Peter's Post Notes) někým, kdo není "
+"autorem bez toho aby se změnil statut příspěvku"
+
+#: peters_collaboration_emails.php:1803
+msgid "Successfully updated plugin settings"
+msgstr "Nastavení pluginu úspěšně upraveno"
+
+#: peters_collaboration_emails.php:1933
+msgid "**** ERROR: That taxonomy type does not exist for that post type ****"
+msgstr "**** CHYBA: Druh taxanomie neexistuje pro tento druh příspěvku ****"
+
+#: peters_collaboration_emails.php:1950
+msgid ""
+"**** ERROR: That post type rule already exists. Please add or remove "
+"moderators to the existing rule. ****"
+msgstr ""
+"**** CHYBA: Toto pravidlo pro druh příspěvku již existuje. Prosím přidejte "
+"nebo odeberte moderátory u existujícího pravidla. ****"
+
+#: peters_collaboration_emails.php:1960
+msgid "**** ERROR: Invalid new moderator user ID ****"
+msgstr "**** CHYBA: Neplatné uřivatelské ID nového moderátora ****"
+
+#: peters_collaboration_emails.php:1972
+msgid "**** ERROR: Invalid new moderator submitted ****"
+msgstr "**** CHYBA: Byl uveden neplatný nový moderátor ****"
+
+#: peters_collaboration_emails.php:1987
+msgid "New moderator added for the post type rule."
+msgstr "Přidán nový moderátor pro druh příspěvku."
+
+#: peters_collaboration_emails.php:1991
+msgid ""
+"**** ERROR: Unknown query error when adding a new moderator for the post "
+"type rule ****"
+msgstr ""
+"**** CHYBA: Neznámá chyba dotazu při přidávání nového moderátora pro druh "
+"příspěvku ****"
+
+#: peters_collaboration_emails.php:1997
+msgid "**** ERROR: No moderator was submitted for the post type rule ****"
+msgstr "**** CHYBA: Nebyl přidán žádný moderátor pro typ příspěvku ****"
+
+#: peters_collaboration_emails.php:2031
+#, php-format
+msgid "**** ERROR: Post type rule with ID of %d does not exist ****"
+msgstr "**** CHYBA: Pravidlo pro druh příspěvku s ID %d neexistuje ****"
+
+#: peters_collaboration_emails.php:2060
+msgid ""
+"You must have at least one default moderator for each rule. Otherwise, "
+"delete the rule."
+msgstr ""
+"Musíte mít alespoň jednoho výchozího moderátora pro každé pravido. Jinak "
+"pravidlo vymažte."
+
+#: peters_collaboration_emails.php:2068
+msgid "Moderators for the post type rules updated."
+msgstr "Moderátoři pro druh příspěvku upraveni."
+
+#: peters_collaboration_emails.php:2081
+msgid "Delete post type rule"
+msgstr "Vymazat pravidlo pro druh příspěvku"
+
+#: peters_collaboration_emails.php:2089
+msgid "Post type rule successfully deleted."
+msgstr "Pravidlo pro druh příspěvku úspěšně smazáno."
+
+#: peters_collaboration_emails.php:2094
+msgid "Are you sure you want to remove this post type rule?"
+msgstr "Jste si jistý, že chcete smazat toto pravidlo pro druh příspěvku?"
+
+#: peters_collaboration_emails.php:2099
+msgid "No, go back"
+msgstr "Ne, zpět"
+
+#: peters_collaboration_emails.php:2105
+msgid "That post type rule does not exist."
+msgstr "Toto pravidlo pro druh příspěvku neexistuje."

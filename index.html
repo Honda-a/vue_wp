@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/loader.css">
+<title>wp.scan</title>
+</head>
+<body>
+	
+<header>
+	<h1 class="logo"><a href="/" class="trans"><img src="img/common/header_logo.png" alt="wp.scan"></a></h1>
+	<div class="contact">
+		<a href="tel:03-6262-5380" class="tel">
+			<div class="img"><img src="img/common/tel.png" alt="TEL"></div>
+			<div class="call">
+				<div class="number">03-6262-5380</div>
+				<div class="txt">受付時間 月〜金　9:00〜19:00</div>
+			</div>
+			<div class="txt sm">電話をかける</div>
+		</a><!-- tel -->
+		<a href="#" class="form trans"><span>お問い合わせ</span></a>
+	</div>
+</header>
+	
+<main onclick="">
+	<div class="top_sec01">
+		<div class="container">
+			<h2 class="ttl"><img src="img/top/ttl.png" alt="WordPressのセキュリティ対策は大丈夫？ワンクリックであなたのサイトの脆弱性を診断！" class="md"><img src="img/top/sm/ttl.png" alt="WordPressのセキュリティ対策は大丈夫？ワンクリックであなたのサイトの脆弱性を診断！" class="sm"></h2>
+			<div class="form">
+				<input type="url" placeholder="http://" class="url">
+				<input type="reset" class="delete trans">
+			</div><!-- form -->
+			<div class="check">
+				<label><input type="checkbox" id="bf" name="BF"><span></span>管理画面へのログインを複数回試みます。</label>
+				<div class="modal"><img src="img/common/info.png" alt=""><span>この項目はなんですか？</span></div>
+				<div class="bal">
+					<div class="box">
+						<p class="txt">この項目にチェックを入れると、WordPressの管理画面へのログイン画面にブルートフォースアタック（総当たり攻撃）のシュミレートを行います。<br>
+あくまで安全性を調べるだけなので、サーバーに過度な負荷がかかるようなことはありませんが、以下の点にはご注意ください。</p>
+						<p class="txt">ログインにアラートを設定している場合、アラート通知が送られる可能性があります。また、ログイン失敗時に同一IPによるログインにロックを行なっている場合、次回チェック時に正しいチェックが出来ない可能性があります。
+よくわからない場合には、チェックを入れてから診断を行なってください。</p>
+					</div>
+				</div>
+			</div><!-- check -->
+			<div class="submit">
+				<button class="btn trans"><span>脆弱性をチェックする</span>(一度だけクリックしてください)</button>
+			</div><!-- submit -->
+		</div>
+	</div><!-- top_sec01 -->
+
+	<div id="result"></div>
+	
+	<div class="top_sec02">
+		<div class="container">
+			<ul class="list">
+				<li>
+					<div class="img"><img src="img/top/img01.png" alt="" class="md"><img src="img/top/sm/img01.png" alt="" class="sm"></div>
+					<div class="ttl"><span>このツールについて</span></div>
+					<p class="txt">「wp.scan」は、WordPressのプロフェッショナル集団「wp.make」が開発したWordPressサイトの脆弱性診断ツールです。</p>
+					<p class="txt">ページのURLを入力するだけで、あなたのサイトのハッキングに対する脆弱性を〇〇項目に渡って診断します。</p>
+					<p class="txt">脆弱性診断の結果を見ることで、あなたのサイトに必要なセキュリティ対策がわかります。</p>
+					<p class="txt">安全なWordPressサイト運営のために、ご活用ください。</p>
+					<a href="#" class="btn">WordPressのプロフェッショ<br class="md">ナル集団<br class="sm">「wp.make」について</a>
+				</li>
+				<li>
+					<div class="img"><img src="img/top/img02.png" alt="" class="md"><img src="img/top/sm/img02.png" alt="" class="sm"></div>
+					<div class="ttl"><span>WordPressの<br class="md">脆弱性について</span></div>
+					<p class="txt">オープンソースであるWordPressでは、セキュリティ対策が非常に重要です。</p>
+					<p class="txt">脆弱性への対策が不十分だと、サイトがハッキングされ、不正改ざんなどの被害に逢う危険性が高くなります。</p>
+					<p class="txt">管理画面にアクセス出来なくなったり、サイト訪問者が悪意のあるサイトにリダイレクトされたり、投稿した覚えのない記事が投稿されるなど、様々な被害が予想されます。</p>
+					<a href="#" class="btn">WordPressの脆弱性について<br>もっと詳しく</a>
+				</li>
+				<li>
+					<div class="img"><img src="img/top/img03.png" alt="" class="md"><img src="img/top/sm/img03.png" alt="" class="sm"></div>
+					<div class="ttl"><span>脆弱性が見つかったら？</span></div>
+					<p class="txt">診断の結果、脆弱性が見つかったら、出来るだけ早く対応しましょう。</p>
+					<p class="txt">セキュリティ対策が遅れると、それだけ不正アクセスや不正改ざんといった被害に逢うリスクが高くなります。</p>
+					<p class="txt">もし、ご自分での対策が難しいと感じられたら、WordPressのプロに対策を依頼しましょう。</p>
+					<p class="txt">wp.scanを運営する「wp.make」では、サイトの継続的な保守・セキュリティ対策や被害に合ったサイトの復旧も対応しています。</p>
+					<a href="#" class="btn">WordPressのセキュリティ対策<br class="md">について<br class="sm">相談する</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</main>
+
+<div id="gototop" class="trans"><img src="img/common/gototop.png" alt="pagetop"></div>
+
+<footer>
+	<div class="box">
+		<a href="/" class="logo trans"><img src="img/common/footer_logo.png" alt="wp.scan"></a>
+		<ul class="link">
+			<li><a href="#" class="trans">運営会社</a></li>
+			<li><a href="#" class="trans">プライバシーポリシー</a></li>
+		</ul>
+	</div>
+	<p class="copy">Copyright(C) Plate Inc.</p>
+</footer>
+	
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

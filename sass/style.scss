@@ -1,0 +1,963 @@
+@import 'compass';
+@import 'screen';
+@import 'mixin';
+
+// color
+$color01: #333;
+$color02: #051b43;
+$color03: #FFF;
+$color04: #0678d0;
+$color05: #1d345e;
+
+/* ======================================================================
+ common
+====================================================================== */
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  font-size: 14px;
+  color: $color01;
+  letter-spacing: 0.025em;
+	@include sm_max {
+		font-size: 12px;
+	}
+}
+a {
+  text-decoration: none;
+  color: $color01;
+}
+img {
+  vertical-align: bottom;
+	@include sm_max {
+  	width: 100%;
+	}
+}
+.container {
+	width: 1000px;
+  margin: 0 auto;
+  position: relative;
+	@include sm_max {
+  	width: 92%;
+	}
+}
+
+// pc,sp切り替え
+.sm{
+	display: none !important;
+}
+@include sm_max {
+	.sm{
+		display: block !important;
+	}
+	.md{
+		display: none !important;
+	}
+}
+
+// hover
+.trans {
+	@include opacity(1);
+  @include transition(all .2s linear);
+}
+.trans:hover,
+.trans:hover img {
+  @include opacity(0.85);
+}
+
+/* ======================================================================
+ header
+====================================================================== */
+header {
+	background: $color02;
+	color: $color03;
+	padding: 17px 20px;
+	@include flexbox;
+	@include align_items(center);
+	@include sm_max {
+		padding: 12px 3%;
+	}
+	a {
+		color: $color03;
+	}
+	> * {
+		width: 50%;
+		&.logo {
+			@include sm_max {
+				width: 85px;
+			}
+		}
+	}
+	.contact {
+		@include flexbox;
+		@include align_items(center);
+		@include justify_content(flex-end);
+		@include sm_max {
+			position: fixed;
+			z-index: 99;
+			bottom: 0;
+			left: 0;
+			width: 97%;
+			background: $color02;
+			padding: 6px 1.5%;
+		}
+		.tel {
+			@include flexbox;
+			@include align_items(center);
+			pointer-events: none;
+			@include sm_max {
+				text-align: center;
+				position: relative;
+				pointer-events: auto;
+				width: 45%;
+				height: 40px;
+				line-height: 40px;
+				@include border-radius(4px);
+				border: 1px solid $color03;
+				font-weight: bold;
+			}
+			.img {
+				@include sm_max {
+					position: absolute;
+					left: 10px;
+					width: 25px;
+					img {
+						vertical-align: middle;
+					}
+				}
+			}
+			.call {
+				margin-left: 10px;
+				@include sm_max {
+					display: none;
+				}
+				.number {
+					font-weight: bold;
+					letter-spacing: inherit;
+					font-size: 28px;
+					margin-bottom: 6px;
+				}
+			}
+			.txt {
+				@include sm_max {
+					width: 100%;
+					margin-left: 1em;
+					text-align: center;
+				}
+			}
+		}
+		.form {
+			position: relative;
+			text-align: center;
+			color: $color03;
+			font-weight: bold;
+			background-color: #f3a029;
+			@include filter-gradient(#f3a029, #f56c30, vertical);
+			@include background-image(linear-gradient(top, #f3a029 0%,#f56c30 100%));
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			@include border-radius(50px);
+			font-size: 18px;
+			margin-left: 20px;
+			@include sm_max {
+				width: 53.5%;
+				margin-left: 1.5%;
+				height: 40px;
+				line-height: 40px;
+				@include border-radius(4px);
+				font-size: 14px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				width: 20px;
+				height: 20px;
+				background: url(../img/common/arw01_r.png) no-repeat;
+				background-size: 100%;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				margin-top: -10px;
+				@include sm_max {
+					width: 16px;
+					height: 16px;
+					right: 10px;
+					margin-top: -8px;
+				}
+			}
+			span {
+				margin-left: -1em;
+				@include sm_max {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+/* ======================================================================
+ footer
+====================================================================== */
+footer {
+	background: #f5f5f5;
+	padding: 28px 30px;
+	@include flexbox;
+	@include align_items(center);
+	font-size: 12px;
+	@include sm_max {
+		padding: 5%;
+		display: block;
+		font-size: 10px;
+		margin-bottom: 54px;
+	}
+	> * {
+		width: 50%;
+		@include sm_max {
+			width: 100%;
+		}
+		&.box {
+			@include flexbox;
+			@include align_items(center);
+			.logo {
+				width: 146px;
+				@include sm_max {
+					width: 30%;
+					text-align: right;
+				}
+				img {
+					width: 100%;
+				}
+			}
+			.link {
+				@include flexbox;
+				@include align_items(center);
+				margin-left: 40px;
+				@include sm_max {
+					width: 65%;
+					margin-left: 5%;
+					display: table;
+				}
+				li {
+					padding: 5px 20px;
+					@include sm_max {
+						padding: 2px 3%;
+						display: table-cell;
+					}
+					&:not(:last-child) {
+						border-right: 1px solid #d5d3d3;
+					}
+				}
+			}
+		}
+		&.copy {
+			text-align: right;
+			color: #b3b5b6;
+			@include sm_max {
+				text-align: center;
+				margin-top: 4%;
+			}
+		}
+	}
+}
+#gototop {
+	cursor: pointer;
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	display: none;
+	@include sm_max {
+		width: 40px;
+		margin: 0 auto 7%;
+		display: block;
+		position: static;
+		text-align: center;
+	}
+}
+
+/* ======================================================================
+ top
+====================================================================== */
+.top_sec01 {
+	background: $color02;
+	color: $color03;
+	text-align: center;
+	padding: 90px 0 100px;
+	@include sm_max {
+		padding: 10% 0 15%;
+	}
+	.form {
+		position: relative;
+		text-align: left;
+		background: $color03 url(../img/common/web.png) no-repeat 20px 50%;
+		@include border-radius(3px);
+		background-size: 29px;
+		margin: 50px auto 20px;
+		width: 733px;
+		padding: 11px 7px 11px 60px;
+		@include sm_max {
+			width: 92%;
+			padding: 0 0 0 8%;
+			margin: 4% 0 2%;
+			background: $color03 url(../img/common/web.png) no-repeat 10px 50%;
+			background-size: 22px;
+		}
+		input {
+			-webkit-appearance: none;
+			border: none;
+			background: none;
+			outline: none;
+			cursor: pointer;
+			&.url {
+				font-size: 16px;
+				padding: 10px;
+				width: 90%;
+				@include sm_max {
+					padding: 11px;
+				}
+			}
+			&.delete {
+				position: absolute;
+				right: 17px;
+				top: 50%;
+				margin-top: -8px;
+				font-size: 0;
+				background: url(../img/common/close.png) no-repeat;
+				background-size: 100%;
+				width: 16px;
+				height: 16px;
+				@include sm_max {
+					width: 11px;
+					height: 11px;
+					right: 10px;
+					margin-top: -5px;
+					background-size: contain;
+				}
+			}
+		}
+	}
+	.check {
+		display: table;
+		margin: 0 auto 30px;
+		text-align: left;
+		@include sm_max {
+			margin: 4% auto 5%;
+		}
+		label {
+			display: block;
+			cursor: pointer;
+			font-size: 16px;
+			margin-bottom: 10px;
+			@include sm_max {
+				font-size: 12px;
+				margin-bottom: 7px;
+			}
+			input {
+				display: none;
+				+ span {
+					position: relative;
+					@include border-radius(2px);
+					background: $color03;
+					display: inline-block;
+					vertical-align: middle;
+					width: 18px;
+					height: 18px;
+					margin: 0 10px 3px 0;
+					@include sm_max {
+						width: 13px;
+						height: 13px;
+						margin: 0 5px 3px 0;
+					}
+				}
+				&:checked {
+					+ span {
+						background: #F3A029 url(../img/common/check.png) no-repeat center;
+						background-size: 15px;
+						@include sm_max {
+							background-size: 10px;
+						}
+					}
+				}
+			}
+		}
+		.modal {
+			color: $color03;
+			display: block;
+			cursor: pointer;
+			&:hover {
+				span {
+					color: #0797ea;
+					text-decoration: underline;
+				}
+			}
+			@include sm_max {
+				font-size: 11px;
+			}
+			img {
+				vertical-align: middle;
+				width: 19px;
+				margin: 0 10px 3px 0;
+				@include sm_max {
+					width: 13px;
+					margin: 0 5px 3px 0;
+				}
+			}
+			&:hover {
+				+ .bal {
+					//display: block;
+					@include opacity(1);
+				}
+			}
+		}
+		.bal {
+			//display: none;
+			@include transition(all .2s linear);
+			@include opacity(0);
+			position: relative;
+			top: 15px;
+			&:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 9px 12px 9px;
+				border-color: transparent transparent #eef3fc transparent;
+				position: absolute;
+				top: -12px;
+				left: 100px;
+				z-index: 2;
+				@include sm_max {
+					left: 25%;
+				}
+			}
+			.box {
+				@include box-shadow(1px 1px 8px 0px rgba(0,0,0,.25));
+				position: absolute;
+				z-index: 1;
+				background: #eef3fc;
+				color: $color01;
+				@include border-radius(5px);
+				padding: 25px 20px 5px;
+				width: 505px;
+				@include sm_max {
+					width: 100%;
+					left: -5%;
+					padding: 6% 5% 0;
+				}
+				.txt {
+					font-size: 12px;
+					line-height: 1.5;
+					margin-bottom: 1.5em;
+				}
+			}
+		}
+	}
+	.submit {
+		text-align: center;
+		.btn {
+			cursor: pointer;
+			outline: none;
+			-webkit-appearance: none;
+			border: none;
+			background-color: #d5275c;
+			@include filter-gradient(#d5275c, #ad0238, vertical);
+			@include background-image(linear-gradient(top, #d5275c 0%,#ad0238 100%));
+			@include border-radius(8px);
+			color: $color03;
+			line-height: 1.3;
+			padding: 15px;
+			width: 460px;
+			font-size: 16px;
+			@include sm_max {
+				@include border-radius(4px);
+				width: 85%;
+				padding: 3%;
+				font-size: 10px;
+			}
+			span {
+				display: block;
+				font-weight: bold;
+				font-size: 24px;
+				@include sm_max {
+					font-size: 15px;
+				}
+			}
+			&:disabled {
+				cursor: default;
+				@include opacity(.5);
+				background: #737272;
+			}
+		}
+	}
+}
+
+.top_sec02 {
+	padding: 70px 0 150px;
+	@include sm_max {
+		padding: 10% 0 5%;
+	}
+	.list {
+		@include flexbox;
+		@include sm_max {
+			display: block;
+		}
+		li {
+			position: relative;
+			width: 300px;
+			height: 656px;
+			@include sm_max {
+				width: 100%;
+				height: auto;
+				margin-bottom: 15%;
+			}
+			&:not(:nth-child(3n)) {
+				margin-right: 50px;
+				@include sm_max {
+					margin-right: 0;
+				}
+			}
+			.img {
+				text-align: center;
+			}
+			.ttl {
+				position: relative;
+				text-align: center;
+				font-weight: bold;
+				font-size: 22px;
+				line-height: 1.5;
+				margin: 20px 0;
+				min-height: 66px;
+				@include sm_max {
+					font-size: 15px;
+					min-height: inherit;
+					margin: 6% 0 5%;
+				}
+				span {
+					@include vh_tra_c_c;
+					width: 100%;
+					@include sm_max {
+						position: static;
+						@include translate(0);
+					}
+				}
+			}
+			.txt {
+				line-height: 1.6;
+				margin-bottom: 1.5em;
+			}
+			.btn {
+				width: 270px;
+  			@include transition(all .2s linear);
+				font-weight: bold;
+				display: block;
+				border: 1px solid #bbbec3;
+				color: $color02;
+				@include border-radius(6px);
+				background-color: $color03;
+				background-image: url(../img/common/arw03_r.png);
+				background-repeat: no-repeat;
+				background-position: 94% 50%;
+				background-size: 9px;
+				font-size: 16px;
+				line-height: 1.4;
+				padding: 17px 15px;
+				margin-top: 40px;
+				position: absolute;
+				bottom: 0;
+				@include sm_max {
+					position: static;
+					width: 92%;
+					padding: 4%;
+					margin-top: 0;
+					font-size: 13px;
+					@include border-radius(4px);
+					background-position: 95% 50%;
+					background-size: 7px;
+				}
+				&:hover {
+					border: 1px solid $color04;
+					color: $color03;
+					background-color: $color04;
+					background-image: url(../img/common/arw02_r.png);
+				}
+			}
+		}
+	}
+}
+
+/* ======================================================================
+ result
+====================================================================== */
+.result_sec01 {
+	background: $color05;
+	color: $color03;
+	text-align: center;
+	padding: 40px 0 30px;
+	@include sm_max {
+		padding: 3% 0;
+	}
+	.form {
+		position: relative;
+		text-align: left;
+		background: $color03 url(../img/common/web.png) no-repeat 20px 50%;
+		@include border-radius(3px);
+		background-size: 29px;
+		margin: 0 auto 20px;
+		//width: 733px;
+		padding: 6px 7px 6px 60px;
+		@include sm_max {
+			width: 92%;
+			padding: 0 0 0 8%;
+			margin: 0 auto 4%;
+			background: $color03 url(../img/common/web.png) no-repeat 10px 50%;
+			background-size: 22px;
+		}
+		input {
+			-webkit-appearance: none;
+			border: none;
+			background: none;
+			outline: none;
+			cursor: pointer;
+			&.url {
+				font-size: 16px;
+				padding: 10px;
+				width: 90%;
+				@include sm_max {
+					padding: 11px;
+				}
+			}
+			&.reload {
+				position: absolute;
+				right: 17px;
+				top: 50%;
+				margin-top: -11px;
+				font-size: 0;
+				background: url("../img/common/reload.png") no-repeat;
+				background-size: 100%;
+				width: 20px;
+				height: 23px;
+				@include sm_max {
+					width: 18px;
+					height: 22px;
+					right: 10px;
+					margin-top: -11px;
+					background-size: contain;
+				}
+			}
+		}
+	}
+	.check {
+		//width: 800px;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		@include sm_max {
+			text-align: left;
+			display: table;
+		}
+		label {
+			display: block;
+			cursor: pointer;
+			font-size: 16px;
+			margin-bottom: 10px;
+			@include sm_max {
+				font-size: 12px;
+				margin-bottom: 7px;
+			}
+			input {
+				display: none;
+				+ span {
+					position: relative;
+					@include border-radius(2px);
+					background: $color03;
+					display: inline-block;
+					vertical-align: middle;
+					width: 18px;
+					height: 18px;
+					margin: 0 10px 3px 0;
+					@include sm_max {
+						width: 13px;
+						height: 13px;
+						margin: 0 5px 3px 0;
+					}
+				}
+				&:checked {
+					+ span {
+						background: #F3A029 url(../img/common/check.png) no-repeat center;
+						background-size: 15px;
+						@include sm_max {
+							background-size: 10px;
+						}
+					}
+				}
+			}
+		}
+		.modal {
+			color: $color03;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+			&:hover {
+				span {
+					color: #0797ea;
+					text-decoration: underline;
+				}
+			}
+			@include sm_max {
+				font-size: 11px;
+				position: static;
+			}
+			img {
+				vertical-align: middle;
+				width: 19px;
+				margin: 0 10px 3px 0;
+				@include sm_max {
+					width: 13px;
+					margin: 0 5px 3px 0;
+				}
+			}
+			&:hover {
+				+ .bal {
+					//display: block;
+					@include opacity(1);
+				}
+			}
+		}
+		.bal {
+			//display: none;
+			@include transition(all .2s linear);
+			@include opacity(0);
+			position: relative;
+			top: 15px;
+			&:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 9px 12px 9px;
+				border-color: transparent transparent #eef3fc transparent;
+				position: absolute;
+				top: -12px;
+				right: 100px;
+				z-index: 2;
+				@include sm_max {
+					right: inherit;
+					left: 25%;
+				}
+			}
+			.box {
+				@include box-shadow(1px 1px 8px 0px rgba(0,0,0,.25));
+				position: absolute;
+				z-index: 1;
+				right: 0;
+				background: #eef3fc;
+				color: $color01;
+				@include border-radius(5px);
+				padding: 25px 20px 5px;
+				width: 505px;
+				text-align: left;
+				@include sm_max {
+					width: 100%;
+					left: -5%;
+					padding: 6% 5% 0;
+				}
+				.txt {
+					font-size: 12px;
+					line-height: 1.5;
+					margin-bottom: 1.5em;
+				}
+			}
+		}
+	}
+}
+
+.result_sec02 {
+	margin-bottom: 20px;
+	@include sm_max {
+		margin-bottom: 5%;
+	}
+	.container {
+		padding: 90px 0 140px;
+		border-bottom: 1px solid #d1d1d1;
+		@include sm_max {
+			padding: 10% 0 15%;
+		}
+		> .ttl {
+			text-align: center;
+			font-weight: bold;
+			color: $color02;
+			font-size: 36px;
+			margin-bottom: 80px;
+			@include sm_max {
+				font-size: 20px;
+				margin-bottom: 10%;
+			}
+		}
+		.check {
+			> .ttl {
+				background: $color05;
+				color: $color03;
+				font-size: 22px;
+				padding: 19px 20px;
+				@include sm_max {
+					font-size: 15px;
+					padding: 4%;
+				}
+			}
+			.list {
+				border-right: 2px solid #c1c2c4;
+				border-left: 2px solid #c1c2c4;
+				border-bottom: 2px solid #c1c2c4;
+				li {
+					&:not(:last-child) {
+						border-bottom: 1px solid #c1c2c4;
+					}
+					.top {
+						@include flexbox;
+						@include align_items(center);
+						position: relative;
+						cursor: pointer;
+						&.active {
+							background: #eef4fe;
+							.ttl {
+								.button {
+									&:before{
+										transform: rotate(90deg);
+									}
+									&:after{
+										transform: rotate(180deg);
+									}
+								}
+							}
+						}
+						.ico {
+							text-align: center;
+							border-right: 1px solid #c1c2c4;
+							width: 30px;
+							padding: 25px 20px;
+							@include sm_max {
+								width: 10%;
+								padding: 4% 2%;
+							}
+							img {
+								width: 100%;
+							}
+						}
+						.ttl {
+							font-size: 20px;
+							font-weight: bold;
+							width: 890px;
+							padding: 0 20px;
+							@include sm_max {
+								width: 80%;
+								padding: 0 3%;
+								font-size: 14px;
+							}
+							.button{
+								position: absolute;
+								right: 20px;
+								top: 50%;
+								margin-top: -12px;
+								width: 24px;
+								height: 24px;
+								@include sm_max {
+									width: 15px;
+									height: 15px;
+									margin-top: -7px;
+									right: 4%;
+								}
+								&:before,&:after{
+									content: "";
+									position: absolute;
+									background-color: #8fa0be;
+									transition: transform 0.25s ease-out;
+								}
+								&:before{
+									top: 0;
+									left: 50%;
+									width: 2px;
+									height: 100%;
+									margin-left: -1px;
+								}
+								&:after{
+									top: 50%;
+									left: 0;
+									width: 100%;
+									height: 2px;
+									margin-top: -1px;
+								}
+							}
+						}
+					}
+					.btm {
+						display: none;
+						border-top: 1px solid #c1c2c4;
+						padding: 30px 25px 5px;
+						@include sm_max {
+							padding: 4% 4% 0;
+						}
+						.txt {
+							font-size: 16px;
+							line-height: 1.5;
+							margin-bottom: 1.5em;
+							@include sm_max {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+			.btn {
+				display: block;
+				margin: 50px auto 0;
+				position: relative;
+				text-align: center;
+				color: $color03;
+				font-weight: bold;
+				background-color: #f3a029;
+				@include filter-gradient(#f3a029, #f56c30, vertical);
+				@include background-image(linear-gradient(top, #f3a029 0%,#f56c30 100%));
+				width: 740px;
+				height: 90px;
+				line-height: 90px;
+				@include border-radius(90px);
+				font-size: 26px;
+				@include sm_max {
+					width: 100%;
+					height: 60px;
+					line-height: 60px;
+					@include border-radius(60px);
+					font-size: 15px;
+					line-height: 1.3;
+					margin-top: 7%;
+				}
+				&:after {
+					content: "";
+					display: block;
+					width: 30px;
+					height: 30px;
+					background: url(../img/common/arw01_r.png) no-repeat;
+					background-size: 100%;
+					position: absolute;
+					right: 30px;
+					top: 50%;
+					margin-top: -15px;
+					@include sm_max {
+						width: 19px;
+						height: 19px;
+						right: 20px;
+						margin-top: -9px;
+					}
+				}
+				span {
+					@include sm_max {
+						@include vh_tra_c_c;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

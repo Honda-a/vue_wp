@@ -1,0 +1,583 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: peters_collaboration_emails.php\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-07 16:00-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Peter <peter@keung.biz>\n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: peters_collaboration_emails.php:188
+#, php-format
+msgid "There is a new post to review, written by %s."
+msgstr "Hi ha un nou article per revisar, escrit per %s."
+
+#: peters_collaboration_emails.php:191
+#, php-format
+msgid "Accompanying note from %s:"
+msgstr "Nota adjuntada per %s:"
+
+#: peters_collaboration_emails.php:194
+msgid "Review and publish it here: "
+msgstr "Reviseu-lo i publiqueu-lo aquí: "
+
+#: peters_collaboration_emails.php:197
+msgid "pending"
+msgstr "pendent"
+
+#: peters_collaboration_emails.php:217 peters_collaboration_emails.php:257
+#: peters_collaboration_emails.php:293 peters_collaboration_emails.php:335
+#: peters_collaboration_emails.php:354 peters_collaboration_emails.php:375
+#, php-format
+msgid "Hi %s!"
+msgstr "Hola %s!"
+
+#: peters_collaboration_emails.php:220
+#, php-format
+msgid "Your post has been approved by %s and is now published"
+msgstr "El vostre article ha estat aprovat per %s i ja s'ha publicat"
+
+#: peters_collaboration_emails.php:224
+msgid "Your post has been approved"
+msgstr "El vostre article ha estat aprovat"
+
+#: peters_collaboration_emails.php:231 peters_collaboration_emails.php:270
+#: peters_collaboration_emails.php:306
+msgid "Accompanying note:"
+msgstr "Nota adjuntada:"
+
+#: peters_collaboration_emails.php:234 peters_collaboration_emails.php:337
+msgid "See it here:"
+msgstr "Vegeu-lo aquí:"
+
+#: peters_collaboration_emails.php:237
+msgid "published"
+msgstr "publicat"
+
+#: peters_collaboration_emails.php:260
+#, php-format
+msgid ""
+"Your post has been approved by %s and is scheduled to be published on %s at "
+"%s (UTC %s)."
+msgstr ""
+"El vostre article ha estat aprovat per %s i està programat per publicar-se "
+"el %s les %s (UTC %s)."
+
+#: peters_collaboration_emails.php:264
+#, php-format
+msgid ""
+"Your post has been approved and is scheduled to be published on %s at %s "
+"(UTC %s)."
+msgstr ""
+"El vostre article ha estat aprovat i està programat per publicar-se el %s a "
+"les %s (UTC %s)."
+
+#: peters_collaboration_emails.php:275
+msgid "approved and scheduled"
+msgstr "aprovat i programat"
+
+#: peters_collaboration_emails.php:296
+#, php-format
+msgid "Your post has been reverted back to draft status by %s."
+msgstr "El vostre article s'ha retornat a l'estat d'esborrany per %s."
+
+#: peters_collaboration_emails.php:300
+msgid "Your post has been reverted back to draft status."
+msgstr "El vostre article s'ha retornat a l'estat d'esborrany."
+
+#: peters_collaboration_emails.php:310 peters_collaboration_emails.php:358
+msgid "Edit it again here: "
+msgstr "Torneu-lo a editar aquí: "
+
+#: peters_collaboration_emails.php:313
+msgid "back to draft"
+msgstr "torna a ser esborrany"
+
+#: peters_collaboration_emails.php:336
+msgid "Your post is now live."
+msgstr "El vostre article s'ha publicat."
+
+#: peters_collaboration_emails.php:340
+msgid "is now live"
+msgstr "s'ha publicat"
+
+#: peters_collaboration_emails.php:355
+#, php-format
+msgid "An editorial note has been added to your post by %s:"
+msgstr "Una nota editorial ha estat afegida al vostre article per %s:"
+
+#: peters_collaboration_emails.php:361
+msgid "has been modified with an editorial note"
+msgstr "ha estat modificat amb una nota editorial"
+
+#: peters_collaboration_emails.php:376
+#, php-format
+msgid "Thanks for your submission. Your post \"%s\" will be reviewed soon."
+msgstr "Gràcies per l'aportació. Aviat es revisarà el vostre article \"%s\"."
+
+#: peters_collaboration_emails.php:378
+msgid "has been submitted"
+msgstr "s'ha enviat"
+
+#: peters_collaboration_emails.php:470
+msgid "Admin address"
+msgstr "Adreça de l'administrador"
+
+#: peters_collaboration_emails.php:472
+msgid "Other"
+msgstr "Altres"
+
+#: peters_collaboration_emails.php:489 peters_collaboration_emails.php:505
+msgid "**** ERROR: Invalid moderator user ID ****"
+msgstr "**** ERROR: L'identificador de l'usuari moderador és incorrecte ****"
+
+#: peters_collaboration_emails.php:515
+msgid "**** ERROR: Invalid moderator e-mail address submitted ****"
+msgstr ""
+"**** ERROR: L'adreça e-mail de l'usuari moderador introduïda és incorrecta "
+"****"
+
+#: peters_collaboration_emails.php:525
+msgid "**** ERROR: Invalid e-mail address submitted ****"
+msgstr "**** ERROR: L'adreça e-mail introduïda és incorrecta ****"
+
+#: peters_collaboration_emails.php:558
+msgid "Default moderators updated."
+msgstr "S'han actualitzat els moderadors per defecte."
+
+#: peters_collaboration_emails.php:562
+msgid "You must have at least one default mod."
+msgstr "Heu de tenir almenys un moderador per defecte."
+
+#: peters_collaboration_emails.php:592
+#, php-format
+msgid "**** ERROR: Group with ID of %d does not exist ****"
+msgstr "**** ERROR: El grup amb identificador %d no existeix ****"
+
+#: peters_collaboration_emails.php:615
+#, php-format
+msgid "You must have at least one default mod for the group \"%s\"."
+msgstr "Heu de tenir almenys un moderador per defecte per al grup \"%s\"."
+
+#: peters_collaboration_emails.php:623
+msgid "Group moderators updated."
+msgstr "S'han actualitzat els moderadors de grup."
+
+#: peters_collaboration_emails.php:646
+msgid "**** ERROR: Invalid new group contributor user ID ****"
+msgstr ""
+"**** ERROR: L'identificador del nou usuari col·laborador del grup és "
+"incorrecte ****"
+
+#: peters_collaboration_emails.php:655
+msgid "**** ERROR: Invalid new group moderator user ID ****"
+msgstr ""
+"**** ERROR: L'identificador del nou usuari moderador del grup és incorrecte "
+"****"
+
+#: peters_collaboration_emails.php:665
+msgid "**** ERROR: Invalid new group moderator submitted ****"
+msgstr "**** ERROR: El nou moderador de grup introduït és incorrecte ****"
+
+#: peters_collaboration_emails.php:673
+msgid "New group created."
+msgstr "S'ha creat un grup nou."
+
+#: peters_collaboration_emails.php:676
+msgid ""
+"**** ERROR: Unknown query error when adding a collaborator to the new group "
+"****"
+msgstr ""
+"**** ERROR: Error de petició desconegut en afegir un col·laborador al nou "
+"grup ****"
+
+#: peters_collaboration_emails.php:680
+msgid "**** ERROR: Unknown query error when creating new group ****"
+msgstr "**** ERROR: Error de petició desconegut en crear un nou grup ****"
+
+#: peters_collaboration_emails.php:685
+msgid ""
+"**** ERROR: Not all necessary group information was submitted to add a group "
+"****"
+msgstr ""
+"**** ERROR: No s'ha introduït tota la informació necessària per afegir un "
+"grup ****"
+
+#: peters_collaboration_emails.php:701 peters_collaboration_emails.php:849
+msgid "That group does not exist."
+msgstr "Aquest grup no existeix."
+
+#: peters_collaboration_emails.php:715
+msgid "**** ERROR: Insufficient group name or contributor information ****"
+msgstr ""
+"**** ERROR: El nom del grup o la informació del col·laborador és insuficient "
+"****"
+
+#: peters_collaboration_emails.php:716
+msgid "**** Make sure that there is at least one contributor. ****"
+msgstr "**** Assegureu-vos que hi ha almenys un col·laborador. ****"
+
+#: peters_collaboration_emails.php:745
+msgid "**** ERROR: Invalid contributor user ID ****"
+msgstr "**** ERROR: Identificador d'usuari col·laborador incorrecte ****"
+
+#: peters_collaboration_emails.php:768
+msgid "Collaborators updated."
+msgstr "S'han actualitzat els col·laboradors."
+
+#: peters_collaboration_emails.php:773
+msgid "Group name updated."
+msgstr "S'ha actualitzat el nom del grup."
+
+#: peters_collaboration_emails.php:792
+msgid "**** ERROR: That group does not exist ****"
+msgstr "**** ERROR: Aquest grup no existeix ****"
+
+#: peters_collaboration_emails.php:806
+#, php-format
+msgid "Group %s successfully deleted."
+msgstr "El grup %s ha estat eliminat."
+
+#: peters_collaboration_emails.php:809
+msgid "**** ERROR: Database problem in removing the group. ****"
+msgstr ""
+"**** ERROR: Hi ha hagut un problema amb la base de dades en eliminar el "
+"grup. ****"
+
+#: peters_collaboration_emails.php:878
+msgid "Manage group:"
+msgstr "Gestiona el grup:"
+
+#: peters_collaboration_emails.php:880
+msgid "Back to the main collaboration config menu"
+msgstr "Torna al menú principal de configuració de col·laboradors"
+
+#: peters_collaboration_emails.php:882 peters_collaboration_emails.php:1079
+msgid "Group name:"
+msgstr "Nom del grup:"
+
+#: peters_collaboration_emails.php:883
+msgid "Contributors in this group:"
+msgstr "Col·laboradors en aquest grup:"
+
+#: peters_collaboration_emails.php:887 peters_collaboration_emails.php:1215
+#: peters_collaboration_emails.php:1229 peters_collaboration_emails.php:1235
+#: peters_collaboration_emails.php:1251 peters_collaboration_emails.php:1279
+#: peters_collaboration_emails.php:1547
+msgid "Update"
+msgstr "Actualitza"
+
+#: peters_collaboration_emails.php:891
+msgid "Delete this group"
+msgstr "Elimina aquest grup"
+
+#: peters_collaboration_emails.php:971 peters_collaboration_emails.php:1052
+#, php-format
+msgid "General admin (%s)"
+msgstr "Administrador general (%s)"
+
+#: peters_collaboration_emails.php:983 peters_collaboration_emails.php:1064
+#: peters_collaboration_emails.php:1188
+msgid "Add:"
+msgstr "Afegeix:"
+
+#: peters_collaboration_emails.php:1007
+msgid "Edit"
+msgstr "Edita"
+
+#: peters_collaboration_emails.php:1080
+msgid "Add contributor:"
+msgstr "Afegeix col·laborador:"
+
+#: peters_collaboration_emails.php:1087 peters_collaboration_emails.php:1274
+msgid "Add moderator:"
+msgstr "Afegeix moderador:"
+
+#: peters_collaboration_emails.php:1113
+msgid "Delete"
+msgstr "Elimina"
+
+#: peters_collaboration_emails.php:1119 peters_collaboration_emails.php:1358
+msgid "All"
+msgstr "Tot"
+
+#: peters_collaboration_emails.php:1126
+msgid "*** undefined ***"
+msgstr "*** no definit ***"
+
+#: peters_collaboration_emails.php:1139
+msgid "*** n/a ***"
+msgstr "*** no disponible ***"
+
+#: peters_collaboration_emails.php:1175
+msgid "General admin"
+msgstr "Administrador general"
+
+#: peters_collaboration_emails.php:1199
+msgid "Manage collaboration e-mails"
+msgstr "Gestiona les adreces dels col·laboradors"
+
+#: peters_collaboration_emails.php:1200
+msgid ""
+"Set the moderators who should be e-mailed whenever Contributor users submit "
+"pending posts."
+msgstr ""
+"Sel·leccioneu els moderadors als qui s'ha d'enviar un missatge quan els "
+"usuaris Col·laboradors enviïn articles pendents de revisar."
+
+#: peters_collaboration_emails.php:1210
+msgid "Default moderators"
+msgstr "Moderadors per defecte"
+
+#: peters_collaboration_emails.php:1212
+msgid ""
+"These users will be e-mailed if none of the rules below match. Note that "
+"they must be either editors or administrators."
+msgstr ""
+"Aquests usuaris rebran un missatge si no es compleix cap de les regles "
+"següents. Tingueu en compte que han de ser o editors o administradors."
+
+#: peters_collaboration_emails.php:1218
+msgid "Moderators by group"
+msgstr "Moderadors per grup"
+
+#: peters_collaboration_emails.php:1220 peters_collaboration_emails.php:1240
+msgid "Existing rules"
+msgstr "Regles actuals"
+
+#: peters_collaboration_emails.php:1223
+msgid "Group"
+msgstr "Grup"
+
+#: peters_collaboration_emails.php:1224 peters_collaboration_emails.php:1246
+msgid "Moderators"
+msgstr "Moderadors"
+
+#: peters_collaboration_emails.php:1232
+msgid "Add a group"
+msgstr "Afegeix un grup"
+
+#: peters_collaboration_emails.php:1238
+msgid "Moderators by post type and taxonomy"
+msgstr "Moderadors per tipus d'article i taxonomia"
+
+#: peters_collaboration_emails.php:1243
+msgid "Post Type"
+msgstr "Tipus d'article"
+
+#: peters_collaboration_emails.php:1244
+msgid "Taxonomy"
+msgstr "Taxonomia"
+
+#: peters_collaboration_emails.php:1245
+msgid "Term"
+msgstr "Term"
+
+#: peters_collaboration_emails.php:1254
+msgid "Add post-type-specific moderators"
+msgstr "Afegeix moderadors per un tipus d'article específic"
+
+#: peters_collaboration_emails.php:1257
+msgid "Post type:"
+msgstr "Tipus d'article:"
+
+#: peters_collaboration_emails.php:1268
+msgid "Taxonomy:"
+msgstr "Taxonomia:"
+
+#: peters_collaboration_emails.php:1271
+msgid "Term:"
+msgstr "Term:"
+
+#: peters_collaboration_emails.php:1390
+msgid "Manual"
+msgstr "Manual"
+
+#: peters_collaboration_emails.php:1426
+msgid "Customize plugin settings"
+msgstr "Personalització de l'extensió"
+
+#: peters_collaboration_emails.php:1431
+msgid ""
+"The name of your blog, to appear in the title of e-mails. Leave blank to "
+"default to the site name within WordPress."
+msgstr ""
+"El nom del blog, que apareixerà en el títol dels correus electrònics. Deixeu-"
+"ho en blanc per mantenir el nom del lloc web configurat al WordPress."
+
+#: peters_collaboration_emails.php:1439
+msgid ""
+"E-mail address for the person sending all e-mails. If left blank, the sender "
+"is the user performing the action."
+msgstr ""
+"Adreça de correu electrònic de la persona que envia tots els missatges. Si "
+"ho deixeu en blanc, el remitent serà l'usuari que realitza l'acció."
+
+#: peters_collaboration_emails.php:1447
+msgid ""
+"Name for the person sending all e-mails. If left blank, the name is of the "
+"user performing the action."
+msgstr ""
+"Nom de la persona que envia tots els missatges. Si ho deixeu en blanc, el "
+"nom és el de l'usuari que realitza l'acció."
+
+#: peters_collaboration_emails.php:1455
+msgid "Let the contributor know who approved his / her post"
+msgstr "Permet que el col·laborador sàpiga qui ha aprovat el seu article"
+
+#: peters_collaboration_emails.php:1459 peters_collaboration_emails.php:2096
+msgid "Yes"
+msgstr "Sí"
+
+#: peters_collaboration_emails.php:1460
+msgid "No"
+msgstr "No"
+
+#: peters_collaboration_emails.php:1466
+msgid "Which roles on your site can only \"submit for review\""
+msgstr "Quins rols del vostre lloc web només poden \"enviar per revisió\""
+
+#: peters_collaboration_emails.php:1486
+msgid "Which roles on your site can approve posts"
+msgstr "Quins rols del vostre lloc web poden aprovar articles"
+
+#: peters_collaboration_emails.php:1506
+msgid "Which e-mails to send"
+msgstr "Quins missatges de correu electrònic cal enviar"
+
+#: peters_collaboration_emails.php:1526
+msgid "Permission level required to edit collaboration e-mail settings"
+msgstr ""
+"Nivell de permisos que es requereixen per editar els paràmetres dels "
+"missatges de col·laboració"
+
+#: peters_collaboration_emails.php:1559
+msgid "Collaboration e-mails"
+msgstr "Adreces dels col·laboradors"
+
+#: peters_collaboration_emails.php:1731
+msgid "Set to pending for the first time"
+msgstr "Estableix a pendent per primera vegada"
+
+#: peters_collaboration_emails.php:1732
+msgid "Thank the author for their submission when a post is set to pending"
+msgstr ""
+"Agraeix a l'autor la seva aportació quan un article s'estableix com a pendent"
+
+#: peters_collaboration_emails.php:1733
+msgid "Goes from pending to immediately published"
+msgstr "Passa de pendent a immediatament publicat"
+
+#: peters_collaboration_emails.php:1734
+msgid "Goes from pending to approved at a set time in the future"
+msgstr "Passa de pendent a aprovat en un moment establert en el futur"
+
+#: peters_collaboration_emails.php:1735
+msgid "Goes back to draft status"
+msgstr "Torna a ser esborrany"
+
+#: peters_collaboration_emails.php:1736
+msgid "Goes from scheduled to be published to actually published"
+msgstr "Passa de programat a publicat"
+
+#: peters_collaboration_emails.php:1737
+msgid "Goes from private to published"
+msgstr "Passa de privat a publicat"
+
+#: peters_collaboration_emails.php:1738
+msgid ""
+"Edited and commented on (using the Peter's Post Notes plugin) by someone who "
+"is not the author, without having changed the status"
+msgstr ""
+"Editat i comentat (utilitzant l'extensió Peter's Post Notes plugin) per algú "
+"que no és l'autor, sense que s'hagi canviat l'estat"
+
+#: peters_collaboration_emails.php:1803
+msgid "Successfully updated plugin settings"
+msgstr "S'ha actualitzat la configuració de l'extensió correctament"
+
+#: peters_collaboration_emails.php:1933
+msgid "**** ERROR: That taxonomy type does not exist for that post type ****"
+msgstr ""
+"**** ERROR: Aquest tipus de taxonomia no existeix per aquest tipus d'article "
+"****"
+
+#: peters_collaboration_emails.php:1950
+msgid ""
+"**** ERROR: That post type rule already exists. Please add or remove "
+"moderators to the existing rule. ****"
+msgstr ""
+"**** ERROR: Aquesta regla de tipus d'article ja existeix. Afegiu o elimineu "
+"moderadors a la regla existent ****"
+
+#: peters_collaboration_emails.php:1960
+msgid "**** ERROR: Invalid new moderator user ID ****"
+msgstr "**** ERROR: L'identificador del nou moderador és incorrecte ****"
+
+#: peters_collaboration_emails.php:1972
+msgid "**** ERROR: Invalid new moderator submitted ****"
+msgstr "**** ERROR: El nou moderador introduït és incorrecte ****"
+
+#: peters_collaboration_emails.php:1987
+msgid "New moderator added for the post type rule."
+msgstr "S'ha afegit un nou moderador per la regla de tipus d'article."
+
+#: peters_collaboration_emails.php:1991
+msgid ""
+"**** ERROR: Unknown query error when adding a new moderator for the post "
+"type rule ****"
+msgstr ""
+"**** ERROR: Error de petició desconegut en afegir un nou moderador per la "
+"regla de tipus d'article ****"
+
+#: peters_collaboration_emails.php:1997
+msgid "**** ERROR: No moderator was submitted for the post type rule ****"
+msgstr ""
+"**** ERROR: No s'ha introduït cap moderador per la regla de tipus d'article "
+"****"
+
+#: peters_collaboration_emails.php:2031
+#, php-format
+msgid "**** ERROR: Post type rule with ID of %d does not exist ****"
+msgstr ""
+"**** ERROR: La regla de tipus d'article amb identificador %d no existeix ****"
+
+#: peters_collaboration_emails.php:2060
+msgid ""
+"You must have at least one default moderator for each rule. Otherwise, "
+"delete the rule."
+msgstr ""
+"Heu de tenir almenys un moderador per defecte per a cada regla. Si no, "
+"elimineu la regla."
+
+#: peters_collaboration_emails.php:2068
+msgid "Moderators for the post type rules updated."
+msgstr "S'han actualitzat els moderadors per la regla de tipus d'article."
+
+#: peters_collaboration_emails.php:2081
+msgid "Delete post type rule"
+msgstr "Elimina la regla de tipus d'article"
+
+#: peters_collaboration_emails.php:2089
+msgid "Post type rule successfully deleted."
+msgstr "S'ha eliminat la regla de tipus d'article."
+
+#: peters_collaboration_emails.php:2094
+msgid "Are you sure you want to remove this post type rule?"
+msgstr "Esteu segurs d'eliminar aquesta regla de tipus d'article?"
+
+#: peters_collaboration_emails.php:2099
+msgid "No, go back"
+msgstr "No, torna enrere"
+
+#: peters_collaboration_emails.php:2105
+msgid "That post type rule does not exist."
+msgstr "Aquesta regla de tipus d'article no existeix."
